@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-container {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    overflow: hidden;
+    animation: colorChange 10s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% { background-color: #ff9a9e; }
+    25% { background-color: #fad0c4; }
+    50% { background-color: #fad0c4; }
+    75% { background-color: #ff9a9e; }
+    100% { background-color: #ffecd2; }
+}
+
+.profile-image {
+    flex: 1;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile-image img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.profile-info {
+    flex: 2;
+    padding: 20px;
+    animation: textColorChange 10s infinite alternate;
+}
+
+@keyframes textColorChange {
+    0% { color: #333; }
+    25% { color: #555; }
+    50% { color: #777; }
+    75% { color: #999; }
+    100% { color: #bbb; }
+}
+
+.profile-info h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.profile-info p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.profile-info h2 {
+    font-size: 18px;
+    margin: 20px 0 10px;
+}
